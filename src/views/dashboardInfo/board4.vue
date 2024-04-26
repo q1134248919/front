@@ -58,6 +58,7 @@ export default {
             center: [104.114129, 37.550339],
             zoom: 5,
             roam: true,
+            silent: true,
             mapStyle: {
               styleJson: [
                 {
@@ -273,7 +274,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #bord1 {
   margin-left: 20px;
   height: 400px;
@@ -288,5 +289,12 @@ export default {
   margin-left: 20px;
   height: 800px;
   width: 100%;
+}
+
+.anchorBL {
+  display: none !important;
+}
+.anchorBL {
+  display: none !important;
 }
 </style>

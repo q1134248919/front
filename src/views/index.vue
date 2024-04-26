@@ -1,23 +1,42 @@
 <template>
   <div class="app-container home">
-  
+    <el-row>
+      <el-col :span="12"> <B1 /></el-col>
+      <el-col :span="12"> <B5 /></el-col>
+      <el-col :span="12"> <B6 /></el-col>
+      <el-col :span="12"> <B7 /></el-col>
+      <el-col :span="24"> <B4 /></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
+import B1 from "../views/dashboardInfo/board1.vue";
+import B4 from "../views/dashboardInfo/board4.vue";
+import B5 from "../views/dashboardInfo/board5.vue";
+import B6 from "../views/dashboardInfo/board6.vue";
+import B7 from "../views/dashboardInfo/board7.vue";
+
 export default {
+  components: {
+    B1,
+    B5,
+    B4,
+    B6,
+    B7,
+  },
   name: "Index",
   data() {
     return {
       // 版本号
-      version: "3.8.7"
+      version: "3.8.7",
     };
   },
   methods: {
     goTarget(href) {
       window.open(href, "_blank");
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -84,4 +103,3 @@ export default {
   }
 }
 </style>
-
