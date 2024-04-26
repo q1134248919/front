@@ -54,3 +54,11 @@ export function boarByOccupation() {
     method: "get",
   });
 }
+
+//站点分析
+export function boarByPrediction() {
+  return request({
+    url: "/board/prediction",
+    method: "get",
+  });
+}
